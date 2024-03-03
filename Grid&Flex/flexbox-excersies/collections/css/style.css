@@ -101,3 +101,8 @@ img {
 /* At this breakpoint, transition to 3 figures per line */
 
 @media (min-width: 800px) {}
+
+.pop-art{
+    height: 260px;
+    border: 5px solid #ca6702;
+}
