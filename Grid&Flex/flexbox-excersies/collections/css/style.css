@@ -57,6 +57,7 @@ ul {
     display: flex;
     flex-flow: row wrap;
     gap: 4%;
+
 }
 
 li {
@@ -70,6 +71,7 @@ figure {
     padding: 0;
     border: 5px solid red;
     position: relative;
+    height: 260px;
 
 }
 
@@ -77,20 +79,20 @@ figure {
 figcaption a {
     background-color: white;
     text-decoration: none;
-    font-weight: bold;
     position: absolute;
-    color: black;
     padding: 1rem;
     bottom: 0%;
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
+a {
+    color: black;
+    font-weight: bold;
+}
 
 img {
     width: 100%;
-    min-height: 100px;
-
 }
 
 @media (min-width: 550px) {}
