@@ -2,81 +2,112 @@
 Clearly there is more you could place in variables, up to you if you want to use them. My answer does not go beyond colors to keep the code easier to read. */
 
 :root {
-    --color1: #001219;
-    --color2: #005f73;
-    --color3: #3d9397;
-    --color4: #94d28d;
-    --color5: #e9d8a6;
-    --color6: #ee9800;
-    --color7: #ca6702;
-    --color8: #bb3e03;
-    --color9: #ae2012;
-    --color10: #9b2226;
+  --color1: #001219;
+  --color2: #005f73;
+  --color3: #3d9397;
+  --color4: #94d28d;
+  --color5: #e9d8a6;
+  --color6: #ee9800;
+  --color7: #ca6702;
+  --color8: #bb3e03;
+  --color9: #ae2012;
+  --color10: #9b2226;
 }
-
 
 /* generic site styles */
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #DBE5DE;
-    padding: 0;
-    margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dbe5de;
+  padding: 0;
+  margin: 0;
 }
 
 section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 section h2 {
-    font-size: 2.5rem;
-
+  font-size: 2.5rem;
 }
 
-
 /* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
-
 
 /* At this breakpoint, transition to 2 figures per line */
 
 ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 4%;
-
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 4%;
 }
 
 li {
-    list-style: none;
-    flex-basis: 30.6%;
-    margin-bottom: 2%;
+  list-style: none;
+  flex-basis: 30.6%;
+  margin-bottom: 2%;
 }
 
 figure {
-    margin: 0;
-    padding: 0;
-    border: 5px solid red;
-    position: relative;
-    height: 260px;
-
+  margin: 0;
+  padding: 0;
+  border: 5px solid red;
+  position: relative;
+  overflow: hidden;
 }
 
-/* caption styling  */
-figcaption a {
+.pop-art {
+  border: 8px solid #ca6702;
+}
+
+.abstract {
+  border: 8px solid #005f73;
+}
+
+.vivid {
+  border: 8px solid #ee9800;
+}
+
+.music {
+  border: 8px solid #ae2012;
+}
+
+.vehicles {
+  border: 8px solid #94d28d;
+}
+
+.landscape {
+  border: 8px solid #3d9397;
+}
+a {
+  color: black;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+@media (min-width: 550px) {
+}
+
+/* At this breakpoint, transition to 3 figures per line */
+
+@media (min-width: 800px) {
+  /* caption styling  */
+  figcaption a {
     background-color: white;
     text-decoration: none;
     position: absolute;
@@ -84,25 +115,5 @@ figcaption a {
     bottom: 0%;
     width: 100%;
     opacity: 0.5;
-}
-
-a {
-    color: black;
-    font-weight: bold;
-}
-
-img {
-    width: 100%;
-}
-
-@media (min-width: 550px) {}
-
-
-/* At this breakpoint, transition to 3 figures per line */
-
-@media (min-width: 800px) {}
-
-.pop-art{
-    height: 260px;
-    border: 5px solid #ca6702;
+  }
 }
